@@ -13,10 +13,15 @@
       console.log(document);
       document.getElementById("counterValue").textContent = counter;
     }
+    function counterDecrease() {
+      counter--;
+      console.log(document);
+      document.getElementById("counterValue").textContent = counter;
+    }
   </script>
   <body>
-    <div onclick="counterIncrease()">
-      <span id="counterValue">1</span>
-    </div>
+    <div onclick="counterIncrease()">+</div>
+    <span id="counterValue">1</span>
+    <div onclick="counterDecrease()">-</div>
   </body>
 </html>
